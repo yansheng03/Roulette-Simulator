@@ -1,0 +1,49 @@
+Pane {
+    -fx-background-color: #067703;
+}
+
+/* General label styling */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000; /* Light gray */
+}
+
+/* Specific label styling for the title */
+.label-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ecf0f1; /* Light gray */
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #34495e; /* Dark blue-gray */
+    -fx-text-fill: #000000; /* Light gray */
+    -fx-prompt-text-fill: #000000; /* Light gray for prompt text */
+    -fx-border-color: #16a085; /* Teal */
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #16a085; /* Teal */
+    -fx-text-fill: #ecf0f1; /* Light gray */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #1abc9c; /* Light teal */
+}
+
+/* TextArea styling */
+.text-area {
+    -fx-background-color: #34495e; /* Dark blue-gray */
+    -fx-text-fill: #000000; /* Light gray */
+    -fx-border-color: #16a085; /* Teal */
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}

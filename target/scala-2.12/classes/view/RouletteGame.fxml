@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="buttonNumberEven" prefHeight="720.0" prefWidth="1080.0" stylesheets="/view/CasinoTheme.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Roulette.controller.RouletteGameController">
+    <children>
+      <Pane layoutX="10.0" layoutY="620.0" prefHeight="71.0" prefWidth="254.0">
+         <children>
+               <Label fx:id="balanceLabel" text="Balance: $1000.00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="undoBetButton" layoutX="127.0" layoutY="37.0" onAction="#undoLastBet" prefHeight="30.0" prefWidth="110.0" text="Undo Bet" />
+   
+                  <Button fx:id="placeBetButton" layoutY="37.0" onAction="#placeBet" prefHeight="30.0" prefWidth="110.0" text="Place Bet" />
+         </children>
+      </Pane>
+
+         <Label fx:id="resultLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="14.0" layoutY="125.0" prefHeight="98.0" prefWidth="246.0" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" text="Result: " wrapText="true" />
+      <Pane layoutX="259.0" layoutY="300.0" prefHeight="320.0" prefWidth="800.0">
+         <children>
+              <ImageView fitHeight="320.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@/images/RouletteTable.jpg" />
+                  </image>
+              </ImageView>
+            <Button fx:id="buttonNumber0" layoutX="23.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="203.0" prefWidth="49.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber1" layoutX="76.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber2" layoutX="76.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber3" layoutX="76.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber4" layoutX="130.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber5" layoutX="130.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber6" layoutX="130.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber7" layoutX="185.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber8" layoutX="185.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber9" layoutX="185.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber10" layoutX="239.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber11" layoutX="239.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber12" layoutX="239.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber13" layoutX="294.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber14" layoutX="294.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber15" layoutX="294.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber16" layoutX="348.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber17" layoutX="348.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber18" layoutX="348.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber19" layoutX="402.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber20" layoutX="402.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber21" layoutX="402.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber22" layoutX="457.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber23" layoutX="457.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber24" layoutX="457.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber25" layoutX="511.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber26" layoutX="511.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber27" layoutX="511.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber28" layoutX="565.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber29" layoutX="565.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber30" layoutX="565.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber31" layoutX="619.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber32" layoutX="619.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber33" layoutX="619.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber34" layoutX="674.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber35" layoutX="674.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonNumber36" layoutX="674.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonFirstDozen" layoutX="75.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleDozenBet" prefHeight="48.0" prefWidth="216.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonSecondDozen" layoutX="294.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleDozenBet" prefHeight="48.0" prefWidth="216.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonThirdDozen" layoutX="511.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleDozenBet" prefHeight="48.0" prefWidth="216.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonFirstRange" layoutX="77.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleRangeBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonEven" layoutX="185.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleParityBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonRed" layoutX="295.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleColorBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonBlack" layoutX="404.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleColorBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonOdd" layoutX="512.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleParityBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonSecondRange" layoutX="621.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleRangeBet" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonFirstColumn" layoutX="729.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleColumnBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonSecondColumn" layoutX="729.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleColumnBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="buttonThirdColumn" layoutX="729.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleColumnBet" prefHeight="64.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <VBox layoutX="278.0" layoutY="100.0">
+         <children>
+
+                     <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Bets:" />
+               <TextArea fx:id="historyTextArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="350.0" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="691.0" layoutY="100.0" prefHeight="156.0" prefWidth="350.0">
+         <children>
+
+               <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Result History:" />
+               <TextArea fx:id="resultHistoryTextArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="350.0" wrapText="true" />
+         </children>
+      </VBox>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="1080.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Edit Game">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#editBalance" text="Edit Balance" />
+                  <MenuItem mnemonicParsing="false" onAction="#editWinRate" text="Edit Win Rate" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showInstructions" text="Instruction Manual" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+         <Label layoutX="14.0" layoutY="52.0" styleClass="label-title" text="Casino Roulette">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="winRateLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="14.0" layoutY="228.0" prefHeight="28.0" prefWidth="246.0" style="-fx-font-size: 16px; -fx-text-fill: #ffffff;" text="Win Rate:" wrapText="true" />
+      <ImageView fx:id="rouletteWheel" fitHeight="260.0" fitWidth="260.0" layoutX="5.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/RouletteWheel.png" />
+         </image>
+      </ImageView>
+      <Line endX="-19.400009155273438" endY="-142.39999389648438" layoutX="154.0" layoutY="528.0" startX="-19.400009155273438" startY="-78.60000610351562" />
+    </children>
+</Pane>
